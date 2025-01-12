@@ -29,13 +29,13 @@ print(f"The id of a on the memory is: {id(a)}")
 print(f"The id of b on the memory is: {id(b)}")
 
 # However, the id of the nested objects is the same.
-print(f"The id of the first element of a is {id(a[0])}")
-print(f"The id of the first element of b is {id(b[0])}")
+print(f"The id of the first element of a is: {id(a[0])}")
+print(f"The id of the first element of b is: {id(b[0])}")
 
 # Now let`s modify the list a and see if it affects b.
 a[2] = 4
-print(f"The list a is {a}")
-print(f"The list b is {b}")
+print(f"The list a is: {a}")
+print(f"The list b is: {b}")
 
 ####################################################################################################
 # 2. deep_copy() method:
@@ -48,10 +48,10 @@ print(f"The id of c on the memory is: {id(c)}")
 print(f"The id of d on the memory is: {id(d)}")
 
 # This time, the ids of the nested objects are different.
-print(f"The id of the first element of c is {id(c[0])}")
-print(f"The id of the first element of d is {id(d[0])}")
+print(f"The id of the first element of c is: {id(c[0])}")
+print(f"The id of the first element of d is: {id(d[0])}")
 
 # Now let`s modify the list c and see if it affects d.
 c[2] = 4
-print(f"The list c is {c}")
-print(f"The list d is {d}")
+print(f"The list c is: {c}")
+print(f"The list d is: {d}")
