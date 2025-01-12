@@ -6,6 +6,9 @@ Note that it descibes the complexity in the worst-case scenario.
 For the best-case scenario, we can use Omega Notation; and for the average-case scenario, we can use Theta Notation.
 
 It provides a standardized way to compare the efficiency of different algorithms and data structures.
+
+For the table and cheat sheet, please visit:
+https://www.bigocheatsheet.com/
 """
 
 ########################################################################################
@@ -41,7 +44,7 @@ def function_three(n: int):
 
 
 #####################################
-# 2. O(n) - Linear Time Complexity:
+# 2. O(n) - Linear Time Complexity (In otger words, Proportional Time Complexity):
 #####################################
 
 def print_numbers(n: int):
@@ -132,6 +135,8 @@ a.pop(3)  # O(n)
 last_index = len(a) - 1
 a.pop(last_index)  # O(1)
 # This is O(1) because the last element can be deleted directly.
+a.insert(3, 4)  # O(n)
+# This is O(n) because the insert operation requires shifting the elements after the inserted element.
 
 
 ########################################################################################
