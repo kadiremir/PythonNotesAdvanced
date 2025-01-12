@@ -120,3 +120,69 @@ def function_multi(a, b):
 
 # The time complexity of this function is O(a + b) because
 # the number of iterations in the loops is proportional to the sum of a and b.
+
+
+########################################################################################
+# 1. SPACE COMPLEXITY:
+########################################################################################
+
+# In terms of space complexity, the Big O Notation describes
+# how the memory usage of an algorithm grows as the input size increases.
+
+# Space complexity refers to the total amount of memory required by a program to execute, including memory for:
+#
+# Variables: Memory used by variables, constants, arrays, etc.
+# Auxiliary Data Structures: Memory for additional data structures created during execution.
+# Function Call Stack: Memory used for recursive function calls.
+# Input Storage: Memory used to store input data.
+
+#####################################
+# 1. O(1) - Constant Space Complexity:
+#####################################
+
+# The space complexity of an algorithm is O(1) if the amount of memory used by the algorithm is constant,
+# regardless of the input size.
+
+def constant_space(n: int):
+    x = 5
+    y = 10
+    z = x + y
+    return z
+
+# This function has a space complexity of O(1)
+# because the amount of memory used by the algorithm is constant and does not depend on the input size.
+
+#####################################
+# 2. O(n) - Linear Space Complexity:
+#####################################
+
+# The space complexity of an algorithm is O(n)
+# if the amount of memory used by the algorithm is proportional to the input size n.
+
+
+def linear_space(n: int):
+    numbers = []
+    for i in range(n):
+        numbers.append(i)
+    return numbers
+
+# This function has a space complexity of O(n) because the result list grows as n.
+
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+# This function has a space complexity of O(n) because the recursive calls are stored in the function call stack.
+
+
+#####################################
+# 3. O(n^2) - Quadratic Space Complexity:
+#####################################
+
+def create_matrix(n):
+    matrix = [[0] * n for _ in range(n)]
+    return matrix
+
+# Space complexity O(n^2) because the 2D list requires n * n space.
