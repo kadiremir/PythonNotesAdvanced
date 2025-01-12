@@ -121,6 +121,18 @@ def function_multi(a, b):
 # The time complexity of this function is O(a + b) because
 # the number of iterations in the loops is proportional to the sum of a and b.
 
+# WARNING: Be careful with lists. For instance,
+
+a = [1, 2, 3, 4, 5]
+
+a.append(6)  # O(1)
+# This is O(1) because the append operation is a constant-time operation.
+a.pop(3)  # O(n)
+# This is O(n) because the pop operation requires shifting the elements after the deleted element.
+last_index = len(a) - 1
+a.pop(last_index)  # O(1)
+# This is O(1) because the last element can be deleted directly.
+
 
 ########################################################################################
 # 1. SPACE COMPLEXITY:
