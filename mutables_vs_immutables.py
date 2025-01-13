@@ -1,4 +1,7 @@
-# Lecture Note: Understanding Mutable and Immutable Objects in Python
+"""2025, Kadir Emir, https://github.com/kadiremir
+
+This file is to explain mutable and immutable objects in Python.
+"""
 
 #############################################
 # MUTABLE OBJECTS
