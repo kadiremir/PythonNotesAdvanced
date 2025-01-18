@@ -1,4 +1,4 @@
-"""L: Liskov Substitution Principle
+"""L: Liskov Substitution Principle (LSP)
 
 Basically:
     A subclass should be able to replace the parent class without causing errors.

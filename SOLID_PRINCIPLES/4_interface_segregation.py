@@ -1,4 +1,4 @@
-"""I: Interface Segregation Principle
+"""I: Interface Segregation Principle (ISP)
 
 Basically:
     Interfaces should be split as much as possible.

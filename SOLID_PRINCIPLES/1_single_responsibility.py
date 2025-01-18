@@ -5,6 +5,11 @@ Definition:
 
 Tip:
     If a class is handling multiple tasks, consider dividing those tasks into separate classes to improve maintainability and reduce coupling.
+
+Advantages:
+    Maintability
+    Testability (when the class, feature gets bigger)
+    Flexibilty (extending the class, feature, functionality, etc)
 """
 
 ####################################################################################################
