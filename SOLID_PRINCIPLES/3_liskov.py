@@ -1,6 +1,6 @@
 """L: Liskov Substitution Principle
 
-It means:
+Basically:
     A subclass should be able to replace the parent class without causing errors.
     If you have a Parent class and a Child class, you should
     be able to replace the Parent class with the Child class without affecting the program.

@@ -1,6 +1,6 @@
 """I: Interface Segregation Principle
 
-It means:
+Basically:
     Interfaces should be split as much as possible.
     So that the classes that implement the interfaces do not have to implement unnecessary methods.
 
