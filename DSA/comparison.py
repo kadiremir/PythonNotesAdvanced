@@ -8,5 +8,4 @@ Data Structure Comparison
 | Set            | Hash Table              | Yes          | O(1) (avg), O(n) (worst)    | No              |
 | Dictionary     | Hash Table              | Yes          | O(1) (avg), O(n) (worst)    | Yes             |
 |---------------------------------------------------------------------------------------------------------|
-
 """
