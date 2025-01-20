@@ -5,6 +5,24 @@ FACTORY PATTERN:
 The Factory Method Pattern
     - defines an interface for creating an object, but lets subclasses decide which class to instantiate.
     - lets a class defer instantiation to subclasses.
+
+Advantages:
+    - Allows adding new types without changing the client code.
+    - Encapsulate object creation.
+    - Separates the instantiation process from the implementation.
+
+Structure:
+    - Abstract Product
+        - Concrete Product A
+        - Concrete Product B
+    - Product Factory
+
+Client Code:
+    - factory = ProductFactory()
+    - prodcut_1 = factory.get_product("product_a")
+    - prodcut_2 = factory.get_product("product_b")
+    - prodcut_1.do_something()
+    - prodcut_2.do_something()
 """
 
 
@@ -55,5 +73,50 @@ def main():
     # shape3.draw()
 
 
+############################################################
+# Example 2: Factory Method Pattern
+############################################################
+
+
+from abc import ABC, abstractmethod
+
+
+class Payment(ABC):
+    @abstractmethod
+    def do_payment(self, amount: float):
+        pass
+    
+class CreditCardPayment(Payment):
+    def do_payment(self, amount: float):
+        print(f"CreditCardPayment: {amount}")
+        
+class DebitCardPayment(Payment):
+    def do_payment(self, amount: float):
+        print(f"DebitCardPayment: {amount}")
+        
+class PaymentFactory:
+    @staticmethod
+    def get_payment(payment_type: str) -> Payment:
+        if payment_type == "credit":
+            return CreditCardPayment()
+        elif payment_type == "debit":
+            return DebitCardPayment()
+        else:
+            raise ValueError(f"Payment {payment_type} not found")
+        
+# Client Code
+def main_two():
+    factory = PaymentFactory()
+
+    # Create payments
+    payment1 = factory.get_payment("credit")
+    payment2 = factory.get_payment("debit")
+
+    # Do payments
+    payment1.do_payment(100)
+    payment2.do_payment(200)
+
+
 if __name__ == "__main__":
     main()
+    main_two()
