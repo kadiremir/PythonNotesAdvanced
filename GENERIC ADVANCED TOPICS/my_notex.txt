@@ -1,0 +1,19 @@
+Module: In Python, module can refer to a single file, single function or method
+
+Function vs Method: Function can be considered as a standalone entity, whereas method is a function that belongs to a class.
+
+Example of a function:
+def add(a, b):
+    return a + b
+
+Example of a method:
+class Math:
+    def add(self, a, b):
+        return a + b
+
+Encapsulation: means hiding the details of how something works and only showing what is necessary.
+In Python, encapsulation is achieved by using private variables and methods.
+
+A "member" in a Python class refers to any attribute or method that belongs to the class.
+
+mypy: to check the typehints in Python code
