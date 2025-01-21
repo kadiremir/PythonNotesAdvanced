@@ -1,0 +1,39 @@
+HEAP:
+
+    Heap is an ordered tree.
+        i.e. the parent node is greater (or lower) than or equal to the child node.
+
+    There are two types of heaps:
+        1. Max Heap: In a max heap, the parent node is greater than or equal to the child node.
+        2. Min Heap: In a min heap, the parent node is less than or equal to the child node.
+
+    A heap is a complete binary tree.
+    Heaps are used to implement priority queues.
+
+    Operations:
+        1. Insert/Delete
+        2. Heapify
+        3. Build Heap
+
+    Heapify:
+        Heapify is the process of converting a binary tree into a heap.
+
+    Build Heap:
+        Build heap is the process of converting an array into a heap
+
+
+    Time Complexity:
+        Insert: O(log n)
+        Delete: O(log n)
+        Heapify: O(log n)
+        Build Heap: O(n)
+
+    Usage:
+
+        1. Heap Sort
+            It is a comparison-based sorting technique based on Binary Heap data structure.
+                It is similar to selection sort where we first find the maximum element and place the maximum element at the end.
+                We repeat the same process for the remaining elements.
+                Complexity: O(n log n)
+        2. Priority Queue
+            A priority queue is a data structure that stores elements in a queue and returns them based on their priority.
