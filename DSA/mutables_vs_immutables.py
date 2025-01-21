@@ -56,6 +56,20 @@ print(f"Object: {my_tuple}, Memory Address: {id(my_tuple)}")
 my_tuple += (4,)
 print(f"Object: {my_tuple}, Memory Address changed: {id(my_tuple)}")
 
+################################################################
+# WARNING! Be cautious when modifying immutable objects.
+################################################################
+
+# Since they are immutable, we can not modify the contents of an immutable object.
+
+# For example, tuples:
+# my_int = (1,2,3)
+# my_int[0] = 4  # TypeError: 'tuple' object does not support item assignment
+
+# or strings:
+# my_str = "Hello, World!"
+# my_str[0] = "h"  # TypeError: 'str' object does not support item assignment
+
 #############################################
 # Assignment and References
 #############################################
