@@ -1,6 +1,6 @@
 """2025, Kadir Emir, https://github.com/kadiremir
 
-This file explains the enumerate() function in Python.
+This file explains the enumerate() function.
 
 enumerate():
     - Returns an enumerate object.

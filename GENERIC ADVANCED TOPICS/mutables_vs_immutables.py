@@ -7,54 +7,55 @@ This file is to explain mutable and immutable objects in Python.
 # MUTABLE OBJECTS
 #############################################
 # Mutable objects are objects whose state or contents can be changed after they are created.
-# Examples: Lists, Dictionaries, and Sets.
+# Mutables: LISTS, SETS, DICTIONARIES
 
 # When a mutable object is modified, its memory address remains the same.
 my_list = [1, 2, 3, 4, 5]
 
-print(f"Object: {my_list}, Memory Address: {id(my_list)}")
+# Lists
+print(f"Object: {my_list}, Memory Address: {id(my_list)}") # Memory Address of the object
 my_list.append(6)
-print(f"Object: {my_list}, Memory Address remains the same: {id(my_list)}")
+print(f"Object: {my_list}, Memory Address remains the same: {id(my_list)}") # Memory Address remains the same
 
-# Dictionaries are also mutable.
+# Dictionaries
 my_dict = {"key1": "value1", "key2": "value2"}
-print(f"Object: {my_dict}, Memory Address: {id(my_dict)}")
+print(f"Object: {my_dict}, Memory Address: {id(my_dict)}") # Memory Address of the object
 my_dict["key3"] = "value3"
-print(f"Object: {my_dict}, Memory Address remains the same: {id(my_dict)}")
+print(f"Object: {my_dict}, Memory Address remains the same: {id(my_dict)}") # Memory Address remains the same
 
-# Sets are mutable as well.
+# Sets
 my_set = {1, 2, 3}
-print(f"Object: {my_set}, Memory Address: {id(my_set)}")
+print(f"Object: {my_set}, Memory Address: {id(my_set)}") # Memory Address of the object
 my_set.add(4)
-print(f"Object: {my_set}, Memory Address remains the same: {id(my_set)}")
+print(f"Object: {my_set}, Memory Address remains the same: {id(my_set)}") # Memory Address remains the same
 
 #############################################
 # IMMUTABLE OBJECTS
 #############################################
 # Immutable objects are objects whose state or contents cannot be changed after they are created.
-# Examples: Integers, Strings, and Tuples.
+# Immutables: INTEGERS, STRINGS, TUPLES
 
 # When an immutable object is "modified," a new object is created with a different memory address.
 
-# Example with strings:
+# Strings
 my_str = "Hello, World!"
-print(f"Object: {my_str}, Memory Address: {id(my_str)}")
+print(f"Object: {my_str}, Memory Address: {id(my_str)}") # Memory Address of the object
 my_str += " How are you?"
-print(f"Object: {my_str}, Memory Address changed: {id(my_str)}")
+print(f"Object: {my_str}, Memory Address changed: {id(my_str)}") # Memory Address changed
 
-# Example with integers:
+# Integers
 my_int = 5
-print(f"Object: {my_int}, Memory Address: {id(my_int)}")
+print(f"Object: {my_int}, Memory Address: {id(my_int)}") # Memory Address of the object
 my_int = 6
-print(f"Object: {my_int}, Memory Address changed: {id(my_int)}")
+print(f"Object: {my_int}, Memory Address changed: {id(my_int)}") # Memory Address changed
 my_int += 5
-print(f"Object: {my_int}, Memory Address changed: {id(my_int)}")
+print(f"Object: {my_int}, Memory Address changed: {id(my_int)}") # Memory Address changed
 
-# Example with tuples:
+# Tuples
 my_tuple = (1, 2, 3)
-print(f"Object: {my_tuple}, Memory Address: {id(my_tuple)}")
+print(f"Object: {my_tuple}, Memory Address: {id(my_tuple)}") # Memory Address of the object
 my_tuple += (4,)
-print(f"Object: {my_tuple}, Memory Address changed: {id(my_tuple)}")
+print(f"Object: {my_tuple}, Memory Address changed: {id(my_tuple)}") # Memory Address changed
 
 ################################################################
 # WARNING! Be cautious when modifying immutable objects.
@@ -78,20 +79,20 @@ print(f"Object: {my_tuple}, Memory Address changed: {id(my_tuple)}")
 a = 5
 b = a
 print(f"Memory Address of a: {id(a)}")
-print(f"Memory Address of b: {id(b)}")
+print(f"Memory Address of b: {id(b)}") # Memory Address of a and b are the same.
 b = 6
-print(f"Value of a: {a}, Memory Address of a: {id(a)}")
-print(f"Value of b: {b}, Memory Address of b: {id(b)}")
+print(f"Value of a: {a}, Memory Address of a: {id(a)}") # Memory Address of a remains the same.
+print(f"Value of b: {b}, Memory Address of b: {id(b)}") # Memory Address of b is now different.
 # When b is reassigned, it creates a new object in memory.
 
 # Behavior of mutable objects:
 c = [1, 2, 3]
-d = c
+d = c # d is a reference to c
 print(f"Memory Address of c: {id(c)}")
-print(f"Memory Address of d: {id(d)}")
+print(f"Memory Address of d: {id(d)}") # Memory Address of c and d are the same.
 d.append(4)
 print(f"Value of c: {c}, Memory Address of c: {id(c)}")
-print(f"Value of d: {d}, Memory Address of d: {id(d)}")
+print(f"Value of d: {d}, Memory Address of d: {id(d)}") # Memory Address of c and d are still the same.
 # When d is modified, c is also affected because both variables reference the same object.
 
 #############################################

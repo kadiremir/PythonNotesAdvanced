@@ -1,6 +1,6 @@
 """2025, Kadir Emir, https://github.com/kadiremir
 
-This file is to explain the difference between "is" and "==" operators in Python.
+This file is to explain the difference between "is" and "==" operators.
 
 is:
     - Compares the memory address of the objects.

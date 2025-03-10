@@ -1,6 +1,6 @@
 """2025, Kadir Emir, https://github.com/kadiremir
 
-This file is to explain the difference between decorators and context managers in Python.
+This file is to explain the difference between decorators and context managers.
 
 Context Managers:
 - Purpose: Manage resources by ensuring proper setup and cleanup, even in case of exceptions.

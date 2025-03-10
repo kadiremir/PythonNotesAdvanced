@@ -6,7 +6,7 @@ Named Tuples:
     - Are extensions of the regular tuples.
     - Attributes can be accessed by name.
     - Created via a factory function.
-    - Factory metthod takes two arguments:
+    - Factory method takes two arguments:
         - class name
         - list of field names.
 

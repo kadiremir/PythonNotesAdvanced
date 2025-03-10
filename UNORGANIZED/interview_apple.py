@@ -1,14 +1,13 @@
-## 0.
+
 # Write a function to sum the integers from 1 to n
 
 # Write a function to sum only the even integers from 1 to n
-
 
 class MyClass:
     my_variable = 1
 
     def __init__(self):
-        self.my_variable = {1:2, 3:4, 3:5, 4:6}
+        self.my_variable = {1:2, 3:5, 4:6}
 
 
 class YourClass(MyClass):
@@ -24,6 +23,3 @@ print(MyClass.my_variable)
 print(MyClass().my_variable)
 print(YourClass().my_variable)
 print(YourClass().my_variable[3] + MyClass.my_variable)
-
-a = MyClass()
-a.my_variable

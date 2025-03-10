@@ -1,6 +1,6 @@
 """2025, Kadir Emir, https://github.com/kadiremir
 
-This file is to explain and compare iterators and generators in Python.
+This file is to explain and compare iterators and generators.
 
 ========================================
 Iterators:
